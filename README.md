@@ -58,7 +58,7 @@ Solarcast uses [Neko](https://github.com/m1k1o/neko)'s Firefox image as a base. 
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/solarcast.git
+   git clone https://github.com/amonodrama/solarcast.git
    cd solarcast
    ```
 
