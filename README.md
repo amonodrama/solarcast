@@ -5,7 +5,9 @@ A self-hosted, browser watch-party server. Stream a live Firefox desktop to mult
 ---
 
 # ⚠️ Attention/Alternatives
+
 Solarcast uses [Neko](https://github.com/m1k1o/neko)'s Firefox image as a base. Solarcast was built because Neko uses WebRTC which causes issues with dynamic IPs and I couldn't get it working thanks to restrictions by my ISP. Solarcast avoids this by only relying on websockets. Unless you're having a similar issue with Neko you don't need to use Solarcast, Neko is much better thanks to WebRTC it has almost zero delay. Due to how websockets works Solarcast has quite a bit of delay, it's not lag. It is delay.
+
 ---
 
 ## Features
