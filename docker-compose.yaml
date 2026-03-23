@@ -1,0 +1,19 @@
+version: '3.9'
+
+services:
+  solarcast:
+    build: .
+    container_name: solarcast
+    restart: unless-stopped
+    shm_size: '2gb'       # Required by neko firefox
+    ports:
+      - "3000:3000"       # solarcast ports
+    environment:
+      NEKO_DESKTOP_SCREEN: "1920x1080@60"
+      NEKO_SERVER_BIND: "127.0.0.1:8080"   # neko to localhost
+      NEKO_MEMBER_MULTIUSER_USER_PASSWORD: "solarcast" # don't need this
+      NEKO_MEMBER_MULTIUSER_ADMIN_PASSWORD: "solarcast-admin" # don't need this
+      # Solarcast settings
+      SCREEN_W: "1920"
+      SCREEN_H: "1080"
+      HLS_DIR: "/tmp/hls"

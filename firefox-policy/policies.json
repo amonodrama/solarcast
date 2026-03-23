@@ -1,0 +1,17 @@
+{
+  "policies": {
+    "Homepage": {
+      "URL": "https://www.miruro.to/",
+      "Locked": false,
+      "StartPage": "homepage"
+    },
+    "DisableFirstRunPage": true,
+    "DisableFirefoxStudies": true,
+    "DisableTelemetry": true,
+    "OverrideFirstRunPage": "https://www.miruro.to/",
+    "OverridePostUpdatePage": "https://www.miruro.to/",
+    "NoDefaultBookmarks": true,
+    "DisplayBookmarksToolbar": "never",
+    "DisplayMenuBar": "default-off"
+  }
+}
