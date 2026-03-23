@@ -104,7 +104,7 @@ Environment variables can be set in `docker-compose.yaml`:
 
 ### `GET /status`
 
-Returns the current server state as JSON.
+Returns the current server state as JSON. Also logs any errors if any happens.
 
 ```json
 {
