@@ -4,6 +4,10 @@ A self-hosted, browser watch-party server. Stream a live Firefox desktop to mult
 
 ---
 
+# ⚠️ Attention/Alternatives
+Solarcast uses [Neko](https://github.com/m1k1o/neko)'s Firefox image as a base. Solarcast was built because Neko uses WebRTC which causes issues with dynamic IPs and I couldn't get it working thanks to restrictions by my ISP. Solarcast avoids this by only relying on websockets. Unless you're having a similar issue with Neko you don't need to use Solarcast, Neko is much better thanks to WebRTC it has almost zero delay. Due to how websockets works Solarcast has quite a bit of delay, it's not lag. It is delay.
+---
+
 ## Features
 
 - **Live browser streaming** — Captures a headless Firefox desktop via FFmpeg and streams it to all connected clients using fragmented MP4 over WebSocket.
@@ -66,8 +70,19 @@ A self-hosted, browser watch-party server. Stream a live Firefox desktop to mult
    http://localhost:3000
    ```
 
-Multiple browser tabs/devices can connect simultaneously. The first person to click **Take Control** gets control of the Firefox instance.
 
+4. **Let your friends join:**
+   Get [cloudflared tunnel](https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-windows-amd64.exe) from here.
+   Run it.
+   ```
+   .\cloudflared-windows-amd64.exe tunnel --url http://localhost:3000
+   ```
+   Send the link it shares to your friends such as.
+   ```
+   Your quick Tunnel has been created! Visit it at (it may take some time to be reachable):  |
+   https://ctrl-replies-main-rewards.trycloudflare.com                                       |
+   ```
+   Multiple browser tabs/devices can connect simultaneously. The first person to click **Take Control** gets control of the Firefox instance.
 ---
 
 ## Configuration
