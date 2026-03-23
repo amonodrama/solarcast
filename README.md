@@ -1,6 +1,7 @@
 # ☀️ Solarcast
 
 A self-hosted, browser watch-party server. Stream a live Firefox desktop to multiple viewers simultaneously, with real-time chat and shared mouse/keyboard control running inside a Docker container.
+<img width="1738" height="991" alt="image" src="https://github.com/user-attachments/assets/3df6b67e-479e-4748-88f0-05482c9a6369" />
 
 ---
 
